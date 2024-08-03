@@ -1,0 +1,121 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8; /* Off-white background color */
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; /* White background */
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd; /* Optional: Adds a subtle border for separation */
+}
+
+.logo h1 {
+    color: #000; /* Black font color */
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #000; /* Black font color */
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #f0f0f0; /* Light gray on hover */
+}
+
+.cta-button {
+    background-color: #f8f8f8; /* Off-white color */
+    color: #000; /* Black font color */
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.cta-button:hover {
+    background-color: #e0e0e0; /* Slightly darker off-white on hover */
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    flex: 1; /* Takes up the remaining space */
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between text and CTA button */
+    max-width: 60%; /* Adjust width as needed */
+    margin-right: 20px; /* Space between hero section and right-side */
+    background-color: #fff; /* Optional: background color for the hero section */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.hero-text {
+    margin-bottom: 20px; /* Space between text and CTA button */
+}
+
+.hero h2, .hero p {
+    font-family: 'Roboto', sans-serif; /* Change to desired font */
+    color: #000; /* Black font color */
+    margin: 0; /* Remove default margins */
+}
+
+.hero h2 {
+    font-size: 2.5rem; /* Adjust size as needed */
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5rem; /* Adjust size as needed */
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: auto; /* Pushes the footer content to the bottom of the hero section */
+}
+
+.footer-text p {
+    margin: 0;
+    font-size: 1rem; /* Adjust font size as needed */
+}
+
+.footer-text .cta-button {
+    display: block;
+    margin-top: 10px;
+}
+
+.right-side {
+    background-color: #f0f0f0; /* Off-white color */
+    flex: 1 1 300px; /* Flexible width, minimum of 300px */
+    height: 100%; /* Full height of the main container */
+}
